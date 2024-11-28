@@ -1,0 +1,29 @@
+PS1="%% "
+RPS1="[%F{blue}%B%~%b%f]"
+
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt hist_ignore_all_dups
+setopt hist_find_no_dups
+setopt transientrprompt
+setopt nomatch
+
+bindkey -e
+
+case $TERM in
+    xterm*)
+        precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+        ;;
+esac
+
+alias ls="ls --color"
+
+export EDITOR="nvim"
+export PAGER="less"
+
+export GPG_TTY=$(tty)
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+echo UPDATESTARTUPTTY | gpg-connect-agent  > /dev/null

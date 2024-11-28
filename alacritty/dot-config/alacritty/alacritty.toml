@@ -1,0 +1,22 @@
+general.import = [
+  #"~/.config/alacritty/catppuccin-latte.toml"
+  #"~/.config/alacritty/catppuccin-frappe.toml"
+  #"~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[window]
+padding = { x = 4, y = 4 }
+title = "terminal"
+dynamic_padding = true
+dynamic_title = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 11
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+bold = { family = "FiraCode Nerd Font Mono", style = "Bold" }
+italic = { family = "FiraCode Nerd Font Mono", style = "Italic" }
+

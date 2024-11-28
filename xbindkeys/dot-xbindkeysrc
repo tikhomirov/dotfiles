@@ -1,0 +1,26 @@
+"alacritty"
+    Mod4 + Return
+
+"xscreensaver-command -l"
+    Mod4 + Escape
+
+"rofi -modi drun,run,window -show drun -show-icons -dpi 1"
+    Mod4 + d
+
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    XF86AudioMute
+
+"pactl set-sink-volume @DEFAULT_SINK@ -10%"
+    XF86AudioLowerVolume
+
+"pactl set-sink-volume @DEFAULT_SINK@ +10%"
+    XF86AudioRaiseVolume
+
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+    XF86AudioMicMute
+
+"flameshot screen -p ~/pics/screenshots"
+    Print
+
+"flameshot gui"
+    Shift + Print
