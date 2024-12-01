@@ -10,7 +10,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright", "ruby_lsp" }
+        ensure_installed = { "pyright", "ruby_lsp", "html" }
       })
     end
   },

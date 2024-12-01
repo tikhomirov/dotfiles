@@ -23,5 +23,3 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<C-Tab>", "<C-w>w")
 
 require("lazy").setup("plugins")
-
-require("lsp")
