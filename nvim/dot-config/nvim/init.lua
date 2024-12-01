@@ -24,5 +24,4 @@ vim.keymap.set("n", "<C-Tab>", "<C-w>w")
 
 require("lazy").setup("plugins")
 
-require("lspconfig").pyright.setup({})
-require("lspconfig").ruby_lsp.setup({})
+require("lsp")
