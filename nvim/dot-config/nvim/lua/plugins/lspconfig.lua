@@ -10,7 +10,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright", "ruby_lsp", "html" }
+        ensure_installed = { "pyright", "ruby_lsp", "html", "lua_ls" }
       })
     end
   },
@@ -21,6 +21,8 @@ return {
 
       lspconfig.pyright.setup({})
       lspconfig.ruby_lsp.setup({})
+      lspconfig.html.setup({})
+      lspconfig.lua_ls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
