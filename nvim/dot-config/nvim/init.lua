@@ -17,6 +17,8 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.relativenumber = true
 vim.opt.number = true
+vim.opt.swapfile = false
+vim.opt.spell = true
 
 vim.g.mapleader = " "
 
